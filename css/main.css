@@ -107,3 +107,28 @@ body {
 .hidden-box:checked + .check-lebel .check-label-text::after {
   width: 100%;
 }
+
+
+/* grid */
+.container > div {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-gap: 5px;
+
+}
+
+.container > div:nth-child(1n) {
+  background-color: #df2ec7;
+}
+
+.container > div:nth-child(2n) {
+  background-color: aqua;
+}
